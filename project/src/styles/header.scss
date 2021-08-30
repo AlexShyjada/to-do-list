@@ -5,7 +5,7 @@ header.header {
   > div.containerHeader {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 2rem 1rem 12rem;
+    padding: 2rem 0 12rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +31,6 @@ header.header {
           width: 0;
           height: 0;
         }
-        
 
         span.switchButton{
           position: absolute;
@@ -70,4 +69,8 @@ header.header {
       }
     }
   }
+}
+
+header.header.dark{
+  background: var(--blue2);
 }

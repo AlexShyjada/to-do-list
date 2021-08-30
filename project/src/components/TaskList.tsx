@@ -8,7 +8,14 @@ interface Task {
   isComplete: boolean;
 }
 
-export function TaskList() {
+interface IDarkMode {
+  ativo: boolean;
+  setAtivo: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function TaskList(props: IDarkMode) {
+  const {ativo, setAtivo} = props
+
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
@@ -41,7 +48,7 @@ export function TaskList() {
   }
 
   return (
-    <section className="task-list container">
+    <section className={!ativo ? "task-list container light" : "task-list container dark" }>
       <header>
         <h2>Minhas tasks</h2>
 
@@ -58,7 +65,7 @@ export function TaskList() {
         </div>
       </header>
 
-      <main>
+      <main className={!ativo ? "mainTaskList container light" : "mainTaskList container dark" }>
         <ul>
           {tasks.map(task => (
             <li key={task.id}>
