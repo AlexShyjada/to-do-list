@@ -31,11 +31,18 @@ section.task-list {
         color: var(--text);
         padding: 12px 24px;        
         border-radius: 8px;
-        border: 0;
+        border: solid 2px var(--background);
+        outline: none;
+        transition: 0.3s;
         
         &::placeholder {
           color: var(--text-light)
         }
+      }
+
+      input:focus {
+        color: var(--purple);
+        border: solid 2px var(--purple);
       }
 
       button {
