@@ -6,7 +6,7 @@ Esse é um projeto desenvolvido no [Ignite](https://rocketseat.com.br/ignite) da
 
 ## Preview
 
-<p align="center"> <img src="./public/preview.png" alt="preview"> </p>
+<p align="center"> <img src="./project/public/preview.png" alt="preview"> </p>
 
 ---
 
