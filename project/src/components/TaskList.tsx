@@ -38,17 +38,17 @@ export function TaskList(props: IDarkMode) {
         ? {...task, isComplete: !task.isComplete} 
         : task
     )
-    setTasks(changedTaskStatus)    
+    setTasks(changedTaskStatus)
   }
 
   function handleRemoveTask(id: number) {
     const filteredTasks = tasks.filter(task => task.id !== id)
-
     setTasks(filteredTasks)
   }
 
   return (
     <section className={!ativo ? "task-list container light" : "task-list container dark" }>
+      
       <header className="task-listHeader">
         <h2>Minhas tasks</h2>
 
