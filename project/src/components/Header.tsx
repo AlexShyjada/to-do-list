@@ -9,6 +9,10 @@ export function Header(props: IDarkMode) {
 
   const {ativo, setAtivo} = props
 
+  function handleToggleDarkMode () {
+    
+  }
+
   return (
     <header className="header">
       <div className="containerHeader">
