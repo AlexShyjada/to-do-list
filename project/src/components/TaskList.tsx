@@ -49,7 +49,7 @@ export function TaskList(props: IDarkMode) {
 
   return (
     <section className={!ativo ? "task-list container light" : "task-list container dark" }>
-      <header>
+      <header className="task-listHeader">
         <h2>Minhas tasks</h2>
 
         <div className="input-group">
@@ -65,7 +65,7 @@ export function TaskList(props: IDarkMode) {
         </div>
       </header>
 
-      <main className={!ativo ? "mainTaskList container light" : "mainTaskList container dark" }>
+      <main className={!ativo ? "mainTaskList  light" : "mainTaskList dark" }>
         <ul>
           {tasks.map(task => (
             <li key={task.id}>

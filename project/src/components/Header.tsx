@@ -15,7 +15,7 @@ export function Header(props: IDarkMode) {
 
   return (
     <header className={!ativo? "header light" : "header dark"}>
-      <div className="containerHeader">
+      <div className="containerHeader container">
         <div>
           <img src="/logo.svg" alt="to.do"/>
         </div>

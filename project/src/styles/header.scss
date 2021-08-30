@@ -1,9 +1,8 @@
 header.header {
-  background: var(--blue);
+  background: var(--purple);
   padding-top: 2rem;
   
   > div.containerHeader {
-    max-width: 1120px;
     margin: 0 auto;
     padding: 2rem 0 12rem;
     display: flex;
@@ -72,5 +71,5 @@ header.header {
 }
 
 header.header.dark{
-  background: var(--blue2);
+  background: var(--purpleDark);
 }

@@ -1,13 +1,11 @@
 :root {
-  --blue: #273FAD;
-  --blue2: #001470;
+  --purple: #8257E5;
+  --purpleDark: #362853;
   --green: #3FAD27;
   --red: 	#ad273f;
   --background: #EBEBEB;
-  --background2: #1B1E2E;
-  --background3: #FFF;
+  --backgroundDark: #1F1F23;
   --shapes: #FFFFFF;
-  --shapes2: #e2e2e2;
   --text-title: #3D3D4D;
   --text: #1C1C29;
   --text-light: #A09CB1;
@@ -24,12 +22,12 @@ body {
   color: #121214;
 
   main.main{
-    height: 100vh;
+    padding-bottom: 5rem;
+    min-height: 100vh;
     background-color: var(--background)
   }
-  main.main.dark{
-    height: 100vh;
-    background-color: var(--background2)
+  main.main.dark{    
+    background-color: var(--backgroundDark)
   }
 }
 
@@ -40,9 +38,14 @@ input, textarea {
 .container {
   max-width: 1115px;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
 }
 
 button, .checkmark {
   cursor: pointer;
+}
+
+@media (max-width: 1130px) {
+  .container {
+    max-width: 90%;
+  }
 }
