@@ -1,6 +1,6 @@
 ## to.do
 
-Esse é um projeto desenvolvido no [Ignite](https://rocketseat.com.br/ignite) da [Rocketseat](https://rocketseat.com.br/) utilizando React, TypeScript e Sass. Como eu sou EU, óbvio que fiz uma modificação no projeto original, implementei um darkmode, adicionei responsivo e adicionei a possibilidade de salvar os dados do to-do no localstorage.
+Esse é um projeto desenvolvido no [Ignite](https://rocketseat.com.br/ignite) da [Rocketseat](https://rocketseat.com.br/) utilizando React, TypeScript e Sass. Como eu sou EU, óbvio que fiz uma modificação no projeto original, implementei um darkmode e adicionei responsivo para todos os dispositivos móveis
 
 ---
 
